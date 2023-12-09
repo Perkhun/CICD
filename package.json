@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest"
-  },
+    "test": "jest",
+    "build": "webpack"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
