@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest",
-    "build": "webpack"
+    "test": "jest"
 },
   "keywords": [],
   "author": "",
