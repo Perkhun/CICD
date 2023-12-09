@@ -1,6 +1,6 @@
 const request = require("supertest");
 const express = require("express");
-const app = require("./index"); // Імпортуємо налаштований сервер
+const app = require("../index"); // Імпортуємо налаштований сервер
 
 test("POST /products додає новий продукт", async () => {
   const response = await request(app)
