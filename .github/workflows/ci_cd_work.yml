@@ -22,6 +22,11 @@ jobs:
       - name: Build project
         run: |
           npm run
+         
+      - name: Run unit tests
+        run: |
+          npm tests
+
           
       
      
