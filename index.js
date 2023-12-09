@@ -4,7 +4,7 @@ const sqlite3 = require("sqlite3").verbose();
 const cors = require("cors");
 require("dotenv").config();
 
-//Cnfigure ports
+// Configure ports
 const args = process.argv;
 const p_index = args.indexOf("--p");
 const cp_index = args.indexOf("--cp");
@@ -23,7 +23,7 @@ app.use(
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
 
@@ -130,3 +130,4 @@ app.delete("/products/:id", (req, res) => {
     });
   });
 });
+module.exports = server;
